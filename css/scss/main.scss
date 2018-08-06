@@ -37,3 +37,75 @@
 
 // For anything quick and dirty that needs thrown in
 @import "base/shame";
+
+/*
+    Задание 1
+    - Разберись как работают RGB цвета
+    - Подбери цветовую схему в RGB
+
+    Бонус:
+    - Разберись как работают переменные в SCSS (SASS)
+    - Задай цвета с помощью переменных
+    - Организуй все переменные в отдельный файл
+    - Импотируй файл в main.scss
+
+    Подсказка:
+    - Создай файл в одной из подпапок scss
+    - Название файла должно начинаться с символа подчеркивания (_my-vars.scss)
+*/
+
+/*
+    Задание 2
+    - Разберись с единицами измерения в CSS для текста:
+        + px
+        + pt
+    - Единицы измерения для размеров блоков и отступов
+        + px
+        + pt
+        + %
+        + em
+        + rem
+        + vh
+*/
+
+/*
+    Чемпионское задание
+        - Подключи Lato для криллици с помощью fonts.google.com
+*/
+
+$color_my-crimson: #aa5500;
+
+body {
+    font-size: 10px;
+    .block {
+        font-size: 30px;
+        min-height: .5vh;
+
+        span {
+            min-height: 1.5em; // 45px
+            min-height: 1.5rem; // 15px
+        }
+    }
+}
+
+.headline {
+    // color: crimson;
+    color: $color_my-crimson;
+    text-shadow: black 1px 1px 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    }
+
+p {
+    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: black;
+    text-shadow: rgb(95, 10, 27) 1px 1px 1px; 
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-style: italic;
+    color: darkgrey;
+}
