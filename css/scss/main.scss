@@ -74,7 +74,7 @@
         - Подключи Lato для криллици с помощью fonts.google.com
 */
 
-$color_my-crimson: #aa5500;
+// $color_my-crimson: #aa5500;
 
 body {
     font-size: 10px;
@@ -90,9 +90,8 @@ body {
 }
 
 .headline {
-    // color: crimson;
-    color: $color_my-crimson;
-    text-shadow: black 1px 1px 1px;
+    color: $my-crimson;
+    text-shadow: $my-black 1px 1px 1px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     }
@@ -100,13 +99,13 @@ body {
 p {
     font-family: Lato, Georgia, 'Times New Roman', Times, serif;
     font-size: x-large;
-    color: black;
-    text-shadow: rgb(95, 10, 27) 1px 1px 1px; 
+    color: $my-black;
+    text-shadow: $my-darkcrimson 1px 1px 1px; 
 }
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     font-style: italic;
-    color: darkgrey;
+    color: $my-darkgrey;
 }
