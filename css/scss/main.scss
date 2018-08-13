@@ -8,13 +8,16 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
 
 // Set variables and reusable mixins
-@import "base/config";
+// @import "base/config";
+// because created "my-config"  
 @import "base/my-config";
 @import "base/mixins";
 
 // Import typical layout styles
 @import "base/grid";
-@import "base/type";
+//@import "base/type";
+// because created "my-type"
+@import "base/my-type";
 
 // Import reusable modules
 @import "components/media";
@@ -73,39 +76,3 @@
     Чемпионское задание
         - Подключи Lato для криллици с помощью fonts.google.com
 */
-
-// $color_my-crimson: #aa5500;
-
-body {
-    font-size: 10px;
-    .block {
-        font-size: 30px;
-        min-height: .5vh;
-
-        span {
-            min-height: 1.5em; // 45px
-            min-height: 1.5rem; // 15px
-        }
-    }
-}
-
-.headline {
-    color: $my-crimson;
-    text-shadow: $my-black 1px 1px 1px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    }
-
-p {
-    font-family: Lato, Georgia, 'Times New Roman', Times, serif;
-    font-size: x-large;
-    color: $my-black;
-    text-shadow: $my-darkcrimson 1px 1px 1px; 
-}
-
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-style: italic;
-    color: $my-darkgrey;
-}
